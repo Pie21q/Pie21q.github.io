@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-x: hidden;">
 <head>
     <meta charset="UTF-8" />
     <title>Main Page</title>
@@ -71,6 +71,8 @@
             .blob{
                 position: absolute;
                 z-index: -2;
+                -webkit-transform: translate3d(0,0,0);
+                
             }
 
             @keyframes BGrotate {
@@ -81,14 +83,6 @@
 
 </head>
 <body style="overflow: scroll; overflow-x: hidden;">
-<div style="animation: aaBGrotate 10s infinite; z-index: -2;">
-    <div class="blob" style="margin-left: 10vw; margin-top: 15vh; scale: 0.9;">
-        <img src="blob.png" style="filter: blur(16000px);">
-    </div>
-    <div class="blob" style="margin-left: 2vw; margin-top: 3vh; scale: 0.9;">
-        <img src="blob3.png" style="filter: blur(7500px);">
-    </div>
-</div>
 <div class="transition-main" id="swup">
     <div id="Section2" style="opacity: 100%;" class="animate__animated animate__faster animate__slideInLeft">
         
