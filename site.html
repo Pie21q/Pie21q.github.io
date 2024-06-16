@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Site info</title>
+    <link rel="icon" type="image/x-icon" href="pie.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="transitions.css" />
+        <style>
+             .hammersmith-one-regular {
+            font-family: "Hammersmith One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            }
+
+            .ubuntu-regular {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .ubuntu-medium {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            }
+
+            .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            .ubuntu-light-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            }
+
+            .ubuntu-regular-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            }
+
+            .ubuntu-medium-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            }
+
+            .ubuntu-bold-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            }   
+
+            .blob{
+                position: absolute;
+                z-index: -2;
+            }
+
+            @keyframes BGrotate {
+             100% {transform: rotate(360deg);}
+            }
+
+            .pcontainer{
+                margin-top: 3rem;
+                width: 40vw;
+            }
+
+            .BottomText{
+                font-size: 1rem;
+                text-align: center;
+                color: rgb(49, 49, 49);
+            }
+        
+        </style>
+
+</head>
+<body style="overflow: scroll;">
+<div style="animation: aaBGrotate 10s infinite; z-index: -2;">
+    <div class="blob" style="margin-left: 10vw; margin-top: 15vh; scale: 0.9;">
+        <img src="blob.png" style="filter: blur(16000px);">
+    </div>
+    <div class="blob" style="margin-left: 2vw; margin-top: 3vh; scale: 0.9;">
+        <img src="blob3.png" style="filter: blur(7500px);">
+    </div>
+</div>
+<div class="transition-main" id="swup">
+    <div class="animate__animated animate__slideInDown animate__fast" style="background-color: white; width: 60vw;margin-left: auto; margin-right: auto;height: fit-content; border-radius: 0 0 1rem 1rem; margin-top: 0; border-top: 0; padding: 3rem; padding-top: 1rem;">
+    <div class="hammersmith-one-regular animate__animated animate__slideInDown animate__faster" style="font-size: 5rem;text-align: center; margin-top: rem;">
+        Il sito
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem;">
+        Il sito è scritto in Html, CSS e Javascript, per le animazioni sono usate due librerie (Animate.css e Swup.js), il sito è hostato tramite GitHub pages sul mio dominio personale
+    </div>
+
+
+</div>
+
+</body>
+</html>

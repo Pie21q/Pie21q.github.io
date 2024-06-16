@@ -1,0 +1,24 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --swup-blue: hsl(305, 87%, 54%);
+  --swup-blue-darker:#2D3142;
+  --swup-red: hsl(354, 99%, 68%);
+  --swup-green: hsl(172, 65%, 62%);
+  --link-underline-color: var(--swup-green);
+  --font-size-fluid-0: clamp(1rem, 2vw, 1.15rem);
+  --font-size-fluid-1: clamp(1.15rem, 3vw, 1.35rem);
+  --font-size-fluid-2: clamp(1.35rem, 4vw, 1.7rem);
+  --font-size-fluid-3: clamp(1.7rem, 5vw, 2.2rem);
+  --gap: clamp(1rem, 2vw, 2rem);
+  --gap-x2: calc(var(--gap) * 2);
+  --radius-round: 1000px;
+  --radius-0: 0.2em;
+  --radius-1: 0.4em;
+  scrollbar-gutter: stable;
+}
+

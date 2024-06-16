@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Progetto</title>
+    <link rel="icon" type="image/x-icon" href="pie.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="transitions.css" />
+        <style>
+             .hammersmith-one-regular {
+            font-family: "Hammersmith One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            }
+
+            .ubuntu-regular {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .ubuntu-medium {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            }
+
+            .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            .ubuntu-light-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            }
+
+            .ubuntu-regular-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            }
+
+            .ubuntu-medium-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            }
+
+            .ubuntu-bold-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            }   
+
+            .blob{
+                position: absolute;
+                z-index: -2;
+            }
+
+            @keyframes BGrotate {
+             100% {transform: rotate(360deg);}
+            }
+
+            .pcontainer{
+                margin-top: 3rem;
+                width: 40vw;
+            }
+
+            .BottomText{
+                font-size: 1rem;
+                text-align: center;
+                color: rgb(49, 49, 49);
+            }
+        
+        </style>
+
+</head>
+<body style="overflow: scroll;">
+<div style="animation: aaBGrotate 10s infinite; z-index: -2;">
+    <div class="blob" style="margin-left: 10vw; margin-top: 15vh; scale: 0.9;">
+        <img src="blob.png" style="filter: blur(16000px);">
+    </div>
+    <div class="blob" style="margin-left: 2vw; margin-top: 3vh; scale: 0.9;">
+        <img src="blob3.png" style="filter: blur(7500px);">
+    </div>
+</div>
+<div class="transition-main" id="swup">
+    <div class="animate__animated animate__slideInDown animate__fast" style="background-color: white; width: 60vw;margin-left: auto; margin-right: auto;height: fit-content; border-radius: 0 0 1rem 1rem; margin-top: 0; border-top: 0; padding: 3rem; padding-top: 1rem;">
+    <div class="hammersmith-one-regular animate__animated animate__slideInDown animate__faster" style="font-size: 5rem;text-align: center; margin-top: 0rem;margin-bottom: 1rem;">
+        Il Progetto
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem; margin-bottom: 1rem;">
+        Questo progetto unisce alcune delle mie più grandi passioni, come la fotografia vintage e il design e la stampa 3D.
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 2.5rem;margin-bottom: 0.5rem;">
+        Design e Componentistica
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem;">
+        La prima fase è stata quella di design 3D e di pianificazione dell’elettronica:
+        Ho disegnato il corpo della macchina utilizzando Fusion 360, mentre per l’elettronica il progetto si basa su un Raspberry PI zero 2W (Un piccolo computer che mi permette di controllare direttamente la fotocamera) 
+    </div>
+    <div style="margin-top: 1.5rem;"> 
+        <img src="raspberry.jpg" style="max-width: 60%;border-radius: 0.5rem; ">
+        <div class="hammersmith-one-regular" style="text-align: center; width: 60%;">Microcontrollore Raspberry PI Zero 2W usato per il funzionamento della fotocamera</div>
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem; margin-top: 1.5rem;">
+        Per il design 3D sono partito da zero, basandomi principalmente sulle dimensione effettive dei componenti che il corpo avrebbe dovuto contenere, per quanto riguarda la forma vera e propria del corpo ho preso ispirazione dalle macchine usa e getta a rullino
+    </div>
+    <div style="margin-top: 1.5rem;margin-bottom: 1rem;"> 
+        <img src="fusion360.PNG" style="max-width: 60%;border-radius: 0.5rem; margin-top: 0.5rem;">
+        <div class="hammersmith-one-regular" style="text-align: center; width: 60%;">Screenshot del progetto in Fusion360</div>
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 2.5rem;margin-bottom: 0.5rem; margin-top: 2rem;">
+        Stampa 3D
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem;">
+        La seconda fase è stata di stampa 3D, il progetto viene caricato in un software chiamato slicer (Nel mio caso Cura), che divide il modello in una serie di “fette” bidimensionali, che vengono poi inviate alla stampante sotto forma di linguaggio macchina (GCode)
+    </div>
+    <div style="margin-top: 1.5rem;"> 
+        <img src="cura.PNG" style="max-width: 60%;border-radius: 0.5rem; margin-top: 1.5rem;">
+        <div class="hammersmith-one-regular" style="text-align: center; width: 60%; margin-top: 0.5rem;">Screenshot del software di Slicing</div>
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 2.5rem;margin-bottom: 0.5rem; margin-top: 2rem;">
+        Sviluppo del Software
+    </div>
+    <div class="hammersmith-one-regular" style="font-size: 1.5rem;">
+        Il Raspberry PI che gestisce la fotocamera usa una versione molto leggera di Linux, mentre ho scritto il codice che gestisce il funzionamento base della macchina (Scatto, Salvataggio delle foto) in Python
+        <br><a href="https://github.com/Pie21q/PiInstantCamera" class="hammersmith-one-regular">Tutto il codice è disponibile sul mio profilo GitHub</a>
+    </div>
+
+</div>
+
+</body>
+</html>
