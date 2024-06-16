@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Reimagine Photography</title>
+    <link rel="icon" type="image/x-icon" href="pie.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="swup.js"></script>
+    <link rel="stylesheet" href="transitions.css" />
+    <link rel="stylesheet" href="base.css" />
+    <style>
+        .hammersmith-one-regular {
+            font-family: "Hammersmith One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .ubuntu-regular {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ubuntu-medium {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .ubuntu-light-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .ubuntu-regular-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .ubuntu-medium-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .ubuntu-bold-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .blob {
+            position: absolute;
+            z-index: -2;
+        }
+
+        @keyframes BGrotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body style="height: 100%; overflow: hidden; overflow-x: hidden;" id="body">
+    <div style="animation: aaBGrotate 10s infinite; z-index: -2;">
+        <div class="blob" style="margin-left: 10vw; margin-top: 15vh; scale: 0.9;">
+            <img src="blob.png" style="filter: blur(16000px);">
+        </div>
+        <div class="blob" style="margin-left: 2vw; margin-top: 3vh; scale: 0.9;">
+            <img src="blob3.png" style="filter: blur(7500px);">
+        </div>
+    </div>
+    <div id="swup" class="transition-main">
+    <div style="height: 80vh; width: 100vw; z-index: -1;" id="LandingContainer">
+        <div style="padding: 10%; margin-left: auto; margin-right: auto; width: 100vw;">
+            <div style="height: fit-content; width: 100vw; padding: 2vw; border-radius: 20px; text-align: left; z-index: 3;">
+                <div class="hammersmith-one-regular" style="font-size: 20vh;">PHOTOGRAPHY</div>
+                <div class="hammersmith-one-regular" style="font-size: 20vh;">REIMAGINED</div>
+            </div>
+        </div>
+    </div>
+    <div id="DownArrow">
+        <div style="text-align: center;"><a href="content.html"><img style="width: 4%; height: 4%;" src="down.png" onclick="downArrowFunc()"></a></div>
+    </div>
+    </div>
+    <div class="overlay transition-overlay"></div>
+    <script>
+        function downArrowFunc(){
+            document.body.style.overflowY = "scroll";
+        }
+    </script>
+</body>
+
+</html>
