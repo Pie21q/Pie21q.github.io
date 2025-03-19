@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Oroscopo</title>
+  </head>
+
+  <body style="margin-left: 40%; margin-top: 20%; margin-right: 40%;">
+    <h1 style="text-align: center;">"Oroscopo" Online</h1>
+    <div>
+        <div>
+            <label style="text-align: center;">Scegli il tuo segno</label>
+            <select id="select-id">
+                <option value="Ariete" title="Ariete">Ariete</option>
+                <option value="Toro" title="Toro">Toro</option>
+                <option value="Gemelli" title="Gemelli">Gemelli</option>
+                <option value="Cancro" title="Cancro">Cancro</option>
+                <option value="Leone" title="Leone">Leone</option>
+                <option value="Vergine" title="Vergine">Vergine</option>
+                <option value="Bilancia" title="Bilancia">Bilancia</option>
+                <option value="Scorpione" title="Scorpione">Scorpione</option>
+                <option value="Sagittario" title="Sagittario">Sagittario</option>
+                <option value="Capricorno" title="Capricorno">Capricorno</option>
+                <option value="Aquario" title="Aquario">Aquario</option>
+                <option value="Pesci" title="Pesci">Pesci</option>
+            </select>
+        </div>
+        <div>
+            <label>Scegli il tuo ascendente</label>
+            <select id="select-id">
+                <option value="Ariete" title="Ariete">Ariete</option>
+                <option value="Toro" title="Toro">Toro</option>
+                <option value="Gemelli" title="Gemelli">Gemelli</option>
+                <option value="Cancro" title="Cancro">Cancro</option>
+                <option value="Leone" title="Leone">Leone</option>
+                <option value="Vergine" title="Vergine">Vergine</option>
+                <option value="Bilancia" title="Bilancia">Bilancia</option>
+                <option value="Scorpione" title="Scorpione">Scorpione</option>
+                <option value="Sagittario" title="Sagittario">Sagittario</option>
+                <option value="Capricorno" title="Capricorno">Capricorno</option>
+                <option value="Aquario" title="Aquario">Aquario</option>
+                <option value="Pesci" title="Pesci">Pesci</option>
+            </select>
+        </div>
+        <button style="padding-left: 40%; padding-right: 40%;margin-top: 20px; margin-left: 10%; margin-right: 10%;" id="button" onclick="button()">Calcola</button>
+    </div>
+    <script>
+        num = Math.floor(Math.random() * 24)
+        
+        function loadFile(filePath) {
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+            result = xmlhttp.responseText;
+        }
+    return result;
+    }
+        let text = loadFile('prompts.txt')
+        const message = text.split('\n')
+
+        function button(){
+            alert(message[num])
+        }
+    </script>
+  </body>
+</html>
